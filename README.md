@@ -1,6 +1,6 @@
 # mailer-service
 
-`mailer-service` exposes the `resilient-mailer` library as a REST API.
+`mailer-service` exposes the `resilient-mailer` library as a RESTful API.
 
 [![Build Status](https://img.shields.io/travis/billinghamj/mailer-service.svg?style=flat)](https://travis-ci.org/billinghamj/mailer-service)
 [![Coverage Status](https://img.shields.io/coveralls/billinghamj/mailer-service.svg?style=flat)](https://coveralls.io/r/billinghamj/mailer-service)
