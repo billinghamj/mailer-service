@@ -1,0 +1,4 @@
+---
+permalink: ':title'
+pygments: true
+title: 'mailer-service API'
