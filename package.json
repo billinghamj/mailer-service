@@ -1,0 +1,29 @@
+{
+	"license": "MIT",
+	"author": "James Billingham <james@jamesbillingham.com> (http://jamesbillingham.com)",
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/billinghamj/mailer-service.git"
+	},
+
+	"scripts": {
+		"start": "node app.js",
+		"test": "tape test/*.js",
+		"test-travis": "istanbul cover test/*.js --report lcovonly"
+	},
+
+	"dependencies": {
+		"express": "~4.8.8",
+		"resilient-mailer": "~0.1.0",
+		"resilient-mailer-mailgun": "~0.2.2",
+		"resilient-mailer-mailjet": "~0.1.1",
+		"resilient-mailer-mandrill": "~0.1.1",
+		"resilient-mailer-sendgrid": "~0.1.2"
+	},
+
+	"devDependencies": {
+		"tape": "~2.13.3",
+		"istanbul": "~0.3.2"
+	}
+}
