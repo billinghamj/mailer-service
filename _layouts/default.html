@@ -10,12 +10,15 @@
 
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" />
 		<link rel="stylesheet" href="assets.css" />
+
+		<!--[if lt IE 9]>
+			<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<![endif]-->
 	</head>
 
 	<body>
 		{{ content }}
 
-		<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<script src="assets.js"></script>
 		<script>require('boot');</script>
 	</body>
