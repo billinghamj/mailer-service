@@ -26,5 +26,9 @@
 	"devDependencies": {
 		"tape": "~2.13.3",
 		"istanbul": "~0.3.2"
+	},
+
+	"engines": {
+		"node": "0.10.x"
 	}
 }
