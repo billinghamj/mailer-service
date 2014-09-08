@@ -28,23 +28,13 @@ app.all('*', function (req, res) {
 	res.status(404).end();
 });
 
-var server = http.createServer(app);
-
-function boot() {
-	server.listen(app.get('port'), function () {
-		console.info('Express server listening on port ' + app.get('port'));
-	});
-}
-
-function shutdown() {
-	server.close();
-}
+module.exports = app;
 
 if (require.main === module) {
-	boot();
-} else {
-	console.info('Running app as a module');
-	exports.boot = boot;
-	exports.shutdown = shutdown;
-	exports.port = app.get('port');
+	var server = http.createServer(app);
+	var port = app.get('port');
+
+	server.listen(port, function () {
+		console.info('Express server listening on port ' + app.get('port'));
+	});
 }
