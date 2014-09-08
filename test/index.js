@@ -61,7 +61,7 @@ test('rejects non-json output request', function (t) {
 	request(app)
 		.get('/messages')
 		.set('Authorization', 'Bearer ' + validAuth)
-		.set('Accept', 'text/plain,text/html')
+		.set('Accept', 'text/plain,text/html;q=0.8')
 		.expect(406)
 		.end(t.error);
 
