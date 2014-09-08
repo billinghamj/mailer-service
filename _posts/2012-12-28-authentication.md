@@ -17,4 +17,4 @@ Sends back a collection of things.
     name: 'My second thing'
 }```
 
-For errors responses, see the [response status codes documentation](#response-status-codes).
+For errors responses, see the [response status codes documentation](#/response-status-codes).

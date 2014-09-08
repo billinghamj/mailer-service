@@ -29,4 +29,4 @@ This method allows users to create a new thing.
     name: 'My new thing'
 }```
 
-For errors responses, see the [response status codes documentation](#response-status-codes).
+For errors responses, see the [response status codes documentation](#/response-status-codes).

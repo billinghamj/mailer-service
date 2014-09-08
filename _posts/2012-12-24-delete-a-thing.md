@@ -25,4 +25,4 @@ Sends back a collection of things.
     message: 'Your thing (id: 736) was deleted'
 }```
 
-For errors responses, see the [response status codes documentation](#response-status-codes).
+For errors responses, see the [response status codes documentation](#/response-status-codes).
