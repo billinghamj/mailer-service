@@ -1,22 +1,17 @@
 var express = require('express');
-var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 
+var middleware = require('./middleware');
+var routes = require('./routes');
+
 var app = express();
 
-// all environments
 app.set('port', process.env.PORT || 3000);
+app.set('authorization_token', process.env.AUTHORIZATION_TOKEN);
 
-function authorize(req, res, next) {
-	if (req.session && req.session.admin)
-		return next();
+app.use(middleware.authorization(app));
 
-	else
-		return res.status(401).end();
-}
-
-app.all('/', authorize);
 app.post('/messages', routes.message.create);
 
 app.all('*', function (req, res) {
