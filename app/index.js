@@ -13,6 +13,12 @@ app.set('port', process.env.PORT || 3000);
 app.set('authorization_token', process.env.AUTHORIZATION_TOKEN);
 app.set('mailer', mailer());
 
+app.get('/', function (req, res) {
+	res.status(404);
+	res.type('html');
+	res.send('<p>This is only useful to computers. Documentation available <a href="//billinghamj.github.io/mailer-service/">here</a></p>');
+});
+
 app.use(middleware.authorization(app));
 app.use(middleware.typeValidation(app));
 app.use(bodyParser.json());
