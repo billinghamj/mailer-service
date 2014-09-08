@@ -10,7 +10,6 @@ var mailer = require('./mailer');
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
-app.set('authorization_token', process.env.AUTHORIZATION_TOKEN);
 app.set('mailer', mailer());
 
 app.get('/', function (req, res) {
