@@ -46,6 +46,12 @@ Run the tests (after installation):
 $ npm test
 ```
 
+## Caveats
+
+Currently, this system authenticates based on a static (though not hard-coded)
+authorization token. Naturally this would not be done in a production system,
+but it is suitable as a proof of concept.
+
 ## Support
 
 Please open an issue on this repository.
