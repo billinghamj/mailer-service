@@ -11,6 +11,23 @@
 $ npm install
 ```
 
+### Configuration
+
+Requires the following environment variables:
+
+- `AUTHORIZATION_TOKEN` - a fixed string to protect unauthorized use
+- `MAILGUN_APIKEY` - api key for a mailgun account
+- `MAILGUN_DOMAIN` - domain belonging to the mailgun account
+- `MAILJET_APIKEY` - api key for a mailjet account
+- `MAILJET_APISECRET` - api secret for the mailjet account
+- `MANDRILL_APIKEY` - api key for a mandrill account
+- `SENDGRID_APIUSER` - api user for a sendgrid account
+- `SENDGRID_APIKEY` - api key for the sendgrid account
+
+Optionally, to disable debug output, etc.:
+
+- `NODE_ENV` - set to `production`
+
 ## Running
 
 ```bash
