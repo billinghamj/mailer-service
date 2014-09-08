@@ -15,7 +15,7 @@ app.use(middleware.authorization(app));
 app.use(middleware.typeValidation(app));
 app.use(bodyParser.json());
 
-app.post('/messages', routes.message.create);
+routes.setup(app);
 
 app.all('*', function (req, res) {
 	res.status(404).end();

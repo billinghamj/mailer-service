@@ -1,2 +1,8 @@
-exports.create = function (req, res, next) {
-};
+module.exports = setup;
+
+function setup(app) {
+	app.post('/messages', create);
+}
+
+function create(req, res, next) {
+}
