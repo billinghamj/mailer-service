@@ -16,7 +16,7 @@
 	"dependencies": {
 		"express": "~4.8.8",
 		"body-parser": "~1.8.1",
-		"resilient-mailer": "~0.1.0",
+		"resilient-mailer": "~0.1.1",
 		"resilient-mailer-mailgun": "~0.2.3",
 		"resilient-mailer-mailjet": "~0.1.2",
 		"resilient-mailer-mandrill": "~0.1.2",
