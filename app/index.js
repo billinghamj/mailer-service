@@ -1,4 +1,5 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var http = require('http');
 var path = require('path');
 
@@ -11,6 +12,8 @@ app.set('port', process.env.PORT || 3000);
 app.set('authorization_token', process.env.AUTHORIZATION_TOKEN);
 
 app.use(middleware.authorization(app));
+app.use(middleware.typeValidation(app));
+app.use(bodyParser.json());
 
 app.post('/messages', routes.message.create);
 
