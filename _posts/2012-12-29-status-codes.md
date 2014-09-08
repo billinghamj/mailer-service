@@ -5,7 +5,7 @@ layout: nil
 
 ### Success
 
-Assuming nothing has gone wrong, these status codes will usually be used:
+These status codes are the most common in responses:
 
 * `GET`, `PUT`, `DELETE` returns `200 OK` - indicating success
 * `POST` returns `201 Created` - indicating the creation of a new resource
