@@ -12,9 +12,9 @@ module.exports = function () {
 
 	var mailer = new ResilientMailer();
 
-	mailer.registerProvider(mailgun);
-	mailer.registerProvider(mailjet);
 	mailer.registerProvider(mandrill);
+	mailer.registerProvider(mailjet);
+	mailer.registerProvider(mailgun);
 	mailer.registerProvider(sendgrid);
 
 	return mailer;
