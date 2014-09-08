@@ -9,9 +9,7 @@ All requests must be authorized, or they will fail with
 To authorize a request, simply add the `Authorization` header - replacing
 `YourTokenHere` with a valid access token.
 
-```
-Authorization: Bearer YourTokenHere
-```
+	Authorization: Bearer YourTokenHere
 
 ### Access Tokens
 
