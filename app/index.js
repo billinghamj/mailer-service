@@ -30,6 +30,7 @@ app.all('*', function (req, res) {
 
 module.exports = app;
 
+/* istanbul ignore if : not used during unit testing */
 if (require.main === module) {
 	var server = http.createServer(app);
 	var port = app.get('port');
