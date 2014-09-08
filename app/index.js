@@ -5,11 +5,13 @@ var path = require('path');
 
 var middleware = require('./middleware');
 var routes = require('./routes');
+var mailer = require('./mailer');
 
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
 app.set('authorization_token', process.env.AUTHORIZATION_TOKEN);
+app.set('mailer', mailer());
 
 app.use(middleware.authorization(app));
 app.use(middleware.typeValidation(app));
