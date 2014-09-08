@@ -17,6 +17,10 @@ $ npm install
 $ npm start
 ```
 
+## Usage
+
+See [API documentation](//billinghamj.github.io/mailer-service/).
+
 ## Testing
 
 Run the tests (after installation):
