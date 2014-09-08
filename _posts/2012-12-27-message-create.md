@@ -12,7 +12,7 @@ layout: nil
 
 The minimum required object is:
 
-```
+~~~
 {
 	"from": "no-reply@example.com",
 	"to": [
@@ -22,7 +22,7 @@ The minimum required object is:
 	"textBody": "Inspirational content",
 	"htmlBody": "<p>Inspirational content</p>"
 }
-```
+~~~
 
 You must have at least one of `textBody` and `htmlBody`. Optionally, you may
 supply both. It is recommended that you always have `textBody` however, for
@@ -30,7 +30,7 @@ compatibility with email clients.
 
 This capability is available:
 
-```
+~~~
 {
 	"from": "no-reply@example.com",
 	"replyto": "support@example.com",
@@ -50,7 +50,7 @@ This capability is available:
 	"textBody": "Inspirational content",
 	"htmlBody": "<p>Inspirational content</p>"
 }
-```
+~~~
 
 ### Response
 
