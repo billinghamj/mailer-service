@@ -1,7 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var http = require('http');
-var path = require('path');
 
 var middleware = require('./middleware');
 var routes = require('./routes');
